@@ -1,0 +1,16 @@
+---
+- name: debian | installing squid
+  apt:
+    name: "{{ squid_package }}"
+    state: present
+  become: true
+  register: result
+  until: result is successful
+
+- name: debian | installing apache2-utils
+  apt:
+    name: apache2-utils
+    state: present
+  become: true
+  register: resultb
+  until: resultb is successful
