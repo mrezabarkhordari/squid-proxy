@@ -12,3 +12,4 @@ Ansible role to install/configure Squid Proxy
 
 [playbook.yml](playbook.yml)
 
+Thanks to Larry Smith Jr.
